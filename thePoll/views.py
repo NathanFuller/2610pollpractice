@@ -1,7 +1,15 @@
 from django.http import HttpResponse
+#from django.template import loader
+from django.shortcuts import render
+
+from .models import Question
 
 def index(request):
-    return HttpResponse("Hweolrllod")
+    q_list = Question.objects.order_by('-pub_date')[:5]
+    #template = loader.get_template('thePoll/index.html')
+    context = {'latest_question_list': q_list} 
+    return render(request, 'thePoll/index.html', context)
+#render() gets the request,  a path to the template, and the "context" (this is just to tie variables in the template to the Python objects.
 
 def detail(request, question_id):
     return HttpResponse("Question #%s" % question_id)
