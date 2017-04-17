@@ -1,0 +1,18 @@
+a {
+	color: green;
+	font-family: cursive;
+}
+a:visited{
+	color: #00d0ff;
+}
+table {
+	border-collapse: collapse;
+}
+table, th, td {
+	border: 2px solid #00ff19;
+}
+body {
+	background: black url("images/background.jpg") no-repeat right bottom;
+	color: white;
+	font-family: monospace;
+}
