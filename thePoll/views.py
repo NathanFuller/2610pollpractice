@@ -2,7 +2,7 @@ from django.http import HttpResponse, Http404, HttpResponseRedirect
 from django.shortcuts import render, get_object_or_404
 from django.core.urlresolvers import reverse
 
-from .models import Question
+from .models import Question, Choice
 
 def index(request):
     q_list = Question.objects.order_by('-pub_date')
