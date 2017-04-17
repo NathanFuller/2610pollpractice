@@ -1,5 +1,5 @@
 a {
-	color: green;
+	color: #00ff19;
 	font-family: cursive;
 }
 a:visited{
@@ -10,9 +10,11 @@ table {
 }
 table, th, td {
 	border: 2px solid #00ff19;
+	font-size: 16px;
 }
 body {
 	background: black url("images/background.jpg") no-repeat right bottom;
 	color: white;
 	font-family: monospace;
+	font-size: 18px;
 }
